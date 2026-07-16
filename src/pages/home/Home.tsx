@@ -1,5 +1,6 @@
 import AboutTravel from "./_components/AboutTravels";
 import Hero from "./_components/HeroSection";
+import Services from "./_components/Service";
 
  
 
@@ -9,6 +10,7 @@ const Home = () => {
 
 <Hero/>
 <AboutTravel/>
+<Services/>
 
 
 

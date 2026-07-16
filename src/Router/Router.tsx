@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
  
 import MainLayout from "../Layout/MainLayout";
 import Home from "../pages/home/Home";
-import About from "../pages/about/About";
+ 
 import Contact from "../pages/contact/Contact";
  
 import Management from "../pages/management/Management";
@@ -22,7 +22,8 @@ const Router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: "Coming soon",
+        // element: <About />,
       },
    
       {
