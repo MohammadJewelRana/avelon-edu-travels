@@ -8,7 +8,7 @@ import {
   FaPeopleArrows,
 } from "react-icons/fa";
 import bgImage from "../../assets/about/bg.png";
-import Concern from "../home/_components/Concern";
+
 import Map from "./_components/Map";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -28,7 +28,7 @@ const Contact = () => {
           {/* Title Section */}
           <div className="text-center text-white">
             <p className="text-4xl font-bold text-[#F7BE15] pt-8 pb-4">
-              Rtemis Limited
+           Avelon Edu & Travels
             </p>
             <p className="font-semibold max-w-md mx-auto text-black">
               If you are looking for more information and services about Rtemis,
@@ -49,7 +49,7 @@ const Contact = () => {
               <FaMapPin className="text-4xl text-[#F7BE15] mb-3" />
               <p className="text-lg font-semibold">Address</p>
               <p className="text-gray-700 mt-2">
-                House-23, Road-03,  Dhanmondi, Dhaka-1209.
+                Happy Rahman Plaza,  Banglamotor, Dhaka.
               </p>
             </motion.div>
 
@@ -67,14 +67,14 @@ const Contact = () => {
               {/* Phone */}
               <div className="flex items-center gap-2 mt-3">
                 <FaPhoneAlt className="text-[#F7BE15]" />
-                <p className="text-gray-700">+88 01680-000200</p>
+                <p className="text-gray-700">+88 01977-005581</p>
 
               </div>
 
               {/* Email */}
               <div className="flex items-center gap-2 mt-3">
                 <FaEnvelope className="text-[#F7BE15]" />
-                <p className="text-gray-700">info@rtemisbd.com</p>
+                <p className="text-gray-700">info@avelonbd.com</p>
               </div>
             </motion.div>
 
@@ -93,7 +93,7 @@ const Contact = () => {
               <div className="flex gap-4 mt-6">
                 {/* Facebook */}
                 <Link
-                  to="https://www.facebook.com/rtemisyouth"
+                  to="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative"
@@ -106,7 +106,7 @@ const Contact = () => {
 
                 {/* LinkedIn */}
                 <Link
-                  to="https://www.linkedin.com/company/rtemis-group/posts/?feedView=all"
+                  to="https://www.linkedin.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative"
@@ -124,7 +124,7 @@ const Contact = () => {
 
       <Map />
       {/* Concern Section */}
-      <Concern />
+      {/* <Concern /> */}
     </div>
   );
 };

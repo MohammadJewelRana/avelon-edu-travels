@@ -1,165 +1,97 @@
-import logo1 from "../assets/logo/logo.png";
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import {
-  FaBars,
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTimes,
-  FaTwitter,
-  FaHome,
-  FaUsers,
-  FaBuilding,
-  FaPhone,
-} from "react-icons/fa";
-import { useEffect } from "react";
-import { handleScrollToTop } from "./Footer";
- 
+import { Link, NavLink } from "react-router-dom";
+import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
 const Navbar = () => {
-  const location = useLocation();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  
-
-useEffect(() => {
-  if (menuOpen) {
-    document.body.classList.add("overflow-hidden");
-  } else {
-    document.body.classList.remove("overflow-hidden");
-  }
-
-  return () => {
-    document.body.classList.remove("overflow-hidden"); // Cleanup when unmounting
-  };
-}, [menuOpen]);
-
-
-  const navItems = [
-    { id: 1, title: "Home", path: "/", icon: <FaHome /> },
-    {
-      id: 3,
-      title: "Our Sister Concern",
-      path: "/sister-concern",
-      icon: <FaBuilding />,
-    },
-    { id: 4, title: "Management Team", path: "/management", icon: <FaUsers /> },
-    { id: 5, title: "Contact", path: "/contact", icon: <FaPhone /> },
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Countries", path: "/countries" },
+    { name: "Contact", path: "/contact" },
   ];
 
-  
+  const linkClass = ({ isActive }) =>
+    `relative px-3 py-2 text-sm font-medium transition-all duration-300 ${
+      isActive
+        ? "text-yellow-400"
+        : "text-white/80 hover:text-yellow-400"
+    }`;
 
   return (
-    <header className="sticky top-0 z-50 bg-black shadow-md border"> 
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link to="/">
-              <img src={logo1} className="h-10" alt="Logo" />
-            </Link>
-          </div>
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/90 backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <Link to="/" className="flex flex-col leading-none">
+          <span className="text-2xl font-black tracking-[0.18em] text-white">
+            AVELON
+          </span>
+          <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.35em] text-yellow-400">
+            Edu & Travel
+          </span>
+        </Link>
 
-          {/* Mobile Menu Icon */}
-          <div className="md:hidden">
-            <button
-              className="text-3xl text-white"
-              onClick={() => setMenuOpen(true)}
-            >
-              <FaBars />
-            </button>
-          </div>
-       
+        <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
+          {navLinks.map((item) => (
+            <NavLink key={item.name} to={item.path} className={linkClass}>
+              {item.name}
+            </NavLink>
+          ))}
+        </nav>
 
-          {/* Desktop Links */}
-          <div className="hidden md:flex flex-grow justify-center text-lg text-white">
-  <div className="flex space-x-8">
-    {navItems.map((item) => (
-      <Link
-        key={item.id}
-        to={item.path}
-        onClick={handleScrollToTop}
-        className={`flex items-center gap-2 hover:text-yellow-400 ${
-          location.pathname === item.path ? "text-[#F7BE15] font-semibold" : ""
+        <div className="hidden lg:block">
+          <Link
+            to="/contact"
+            className="rounded-full bg-gradient-to-r from-red-600 to-red-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-red-600/20 transition-all duration-300 hover:scale-[1.03] hover:from-yellow-400 hover:to-yellow-300 hover:text-black"
+          >
+            Free Consultation
+          </Link>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setIsOpen(!isOpen)}
+          className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 p-3 text-white transition hover:bg-white/10 lg:hidden"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-menu"
+        >
+          {isOpen ? <HiOutlineX className="text-2xl" /> : <HiOutlineMenuAlt3 className="text-2xl" />}
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        className={`overflow-hidden border-t border-white/10 bg-zinc-950 transition-all duration-300 lg:hidden ${
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        {item.title}
-      </Link>
-    ))}
-  </div>
-</div>
-        </div>
-
-     
-
-        {/* Mobile Menu Drawer (from left side) */}
-        <div
-          className={`fixed top-0 left-0 w-full h-screen bg-black text-white shadow-lg transform transition-transform duration-300 ${
-            menuOpen ? "translate-x-0" : "-translate-x-full"
-          } md:hidden`}   
-        >
-          {/* Close Button */}
-          <div className="flex justify-between items-center bg-yellow-500 py-6 px-4">
-            <Link to="/">
-              <img src={logo1} className="h-16" alt="Logo" />
-            </Link>
-            <button
-              className="text-white text-2xl"
-              onClick={() => setMenuOpen(false)}
+        <nav className="mx-auto flex max-w-7xl flex-col px-6 py-4" aria-label="Mobile navigation">
+          {navLinks.map((item) => (
+            <NavLink
+              key={item.name}
+              to={item.path}
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                `border-b border-white/5 py-3 text-sm font-medium transition ${
+                  isActive ? "text-yellow-400" : "text-white/80 hover:text-yellow-400"
+                }`
+              }
             >
-              <FaTimes />
-            </button>
-          </div>
+              {item.name}
+            </NavLink>
+          ))}
 
-          {/* Mobile Nav Items */}
-          <div className="flex flex-col mt-6 space-y-4 pl-6 pb-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.id}
-                to={item.path}
-                className={`flex items-center gap-3 text-xl py-3 px-4 border-b border-gray-700 transition duration-300 ${
-                  location.pathname === item.path
-                    ? "text-yellow-400 font-bold"
-                    : "text-white"
-                }`}
-                onClick={() => {
-                  setMenuOpen(false);
-                  handleScrollToTop();
-                }}
-              >
-                {item.icon}
-                {item.title}
-              </Link>
-            ))}
-          </div>
-
-          {/* Divider */}
-          <div className="h-1 w-full bg-yellow-400 my-6"></div>
-
-          {/* Social Links */}
-          <div className="pl-6 pb-12">
-            <p className="text-xl">Follow Us</p>
-            <div className="flex gap-6 pt-4">
-              <Link to="#" className="group">
-                <FaFacebook className="text-3xl text-[#F7BE15] group-hover:text-[#1877F2] transition-colors duration-300" />
-              </Link>
-              <Link to="#" className="group">
-                <FaInstagram className="text-3xl text-[#F7BE15] group-hover:text-[#C13584] transition-colors duration-300" />
-              </Link>
-              <Link to="#" className="group">
-                <FaLinkedin className="text-3xl text-[#F7BE15] group-hover:text-[#0077B5] transition-colors duration-300" />
-              </Link>
-              <Link to="#" className="group">
-                <FaTwitter className="text-3xl text-[#F7BE15] group-hover:text-[#1DA1F2] transition-colors duration-300" />
-              </Link>
-            </div>
-          </div>
-
- 
-
-        </div>
-      </nav>
+          <Link
+            to="/contact"
+            onClick={() => setIsOpen(false)}
+            className="mt-5 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-red-500 px-6 py-3 text-sm font-semibold text-white transition hover:from-yellow-400 hover:to-yellow-300 hover:text-black"
+          >
+            Free Consultation
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 };

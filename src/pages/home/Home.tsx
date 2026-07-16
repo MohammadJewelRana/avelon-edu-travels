@@ -1,14 +1,22 @@
-import AboutRtemis from "./_components/AboutRtemis";
-import Banner from "./_components/Banner";
-import Cautions from "./_components/Cautions";
-import Concern from "./_components/Concern";
-import Feedback from "./_components/Feedback";
-import Services from "./_components/Services";
-import Updates from "./_components/Updates";
+import AboutTravel from "./_components/AboutTravels";
+import Contact from "./_components/Contact";
+import Hero from "./_components/HeroSection";
+import Services from "./_components/Service";
+
+ 
 
 const Home = () => {
   return (
     <div className=" ">
+
+<Hero/>
+<AboutTravel/>
+<Services/>
+
+<Contact/>
+
+
+
       {/* <Banner /> */}
       {/* <Cautions/> */}
 {/* 
