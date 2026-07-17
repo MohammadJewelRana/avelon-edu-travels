@@ -1,6 +1,8 @@
 import AboutTravel from "./_components/AboutTravels";
+ 
 import Contact from "./_components/Contact";
 import Hero from "./_components/HeroSection";
+import HowWeWork from "./_components/HowWorks";
 import Services from "./_components/Service";
 
  
@@ -12,10 +14,10 @@ const Home = () => {
 <Hero/>
 <AboutTravel/>
 <Services/>
-
+<HowWeWork/>
 <Contact/>
 
-
+ 
 
       {/* <Banner /> */}
       {/* <Cautions/> */}
