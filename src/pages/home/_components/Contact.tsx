@@ -13,7 +13,7 @@ import {
   FaCheck,
 } from "react-icons/fa";
 
-const Contact = () => {
+const HomeContact = () => {
   const [copiedText, setCopiedText] = useState("");
 
   const copyToClipboard = async (text) => {
@@ -186,4 +186,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default HomeContact;
