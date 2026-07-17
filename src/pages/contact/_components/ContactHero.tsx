@@ -1,10 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  FaArrowRight,
-  FaPhoneAlt,
-  FaWhatsapp,
-  FaGlobeAsia,
-} from "react-icons/fa";
+ 
 
 const ContactHero = () => {
   return (
@@ -40,23 +35,12 @@ const ContactHero = () => {
             className="mb-6 inline-flex items-center gap-3 rounded-full border border-yellow-400/20 bg-white/5 px-5 py-2 backdrop-blur-xl"
           >
             <span className="h-2.5 w-2.5 rounded-full bg-red-500" />
-            <span className="text-[11px] font-semibold uppercase tracking-[0.35em] text-yellow-300">
+            <span className="text-[16px] font-semibold uppercase tracking-[0.35em] text-yellow-300">
               CONTACT AVELON
             </span>
           </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.15, duration: 0.7 }}
-            className="font-black leading-[1.05] text-white"
-            style={{ fontSize: "clamp(2.4rem, 7vw, 3.8rem)" }}
-          >
-            Start Your
-            <span className="block bg-gradient-to-r from-red-500 via-yellow-400 to-yellow-300 bg-clip-text text-transparent">
-              Journey
-            </span>
-          </motion.h1>
+         
 
           <motion.div
             initial={{ opacity: 0 }}
