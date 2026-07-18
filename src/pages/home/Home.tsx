@@ -1,5 +1,6 @@
 import AboutTravel from "./_components/AboutTravels";
 import HomeContact from "./_components/Contact";
+import DestinationSection from "./_components/destinations/DestinationSection";
  
  
  
@@ -14,8 +15,9 @@ const Home = () => {
     <div className=" ">
 
 <Hero/>
-<AboutTravel/>
+{/* <AboutTravel/> */}
 <Services/>
+<DestinationSection/>
 <HowWeWork/>
 <HomeContact />
 
