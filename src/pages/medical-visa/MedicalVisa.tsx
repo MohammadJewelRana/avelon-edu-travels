@@ -1,44 +1,29 @@
 import HomeContact from "../home/_components/Contact";
 import MedicalVisaProcess from "./_components/MedicalProcess";
+import MedicalVisaCountries from "./_components/MedicalVisaCountries";
 import MedicalVisaHero from "./_components/MedicalVisaHero";
-import MedicalVisaIntro from "./_components/MedicalVisaIntro";
+
 import MedicalVisaPackages from "./_components/MedicalVisaPackages";
- 
+
 import MedicalVisaWhyUs from "./_components/MedicalVisaWhyUs";
 import TrustStats from "./_components/TrustStats";
- 
 
- 
-
-
-const MedicalVisa=()=>{
-//     return(
-//  <div>
-
-//      <TrustStats/>
-  
-//      <MedicalVisaIntro/>
-//  </div>
-
-//     )
-return (
+const MedicalVisa = () => {
+  return (
     <>
- 
-
       <main>
-        <p>Coming soon</p>
-        {/* <MedicalVisaHero/>
-        <TrustStats/>
-        <MedicalVisaIntro />
+        <MedicalVisaHero />
+        <TrustStats />
+        <MedicalVisaCountries />
+
         <MedicalVisaProcess />
-        <MedicalVisaPackages />
+        {/* <MedicalVisaPackages /> */}
         <MedicalVisaWhyUs />
-  
-  <HomeContact/> */}
- 
+
+        <HomeContact />
       </main>
     </>
   );
-}
+};
 
 export default MedicalVisa;
