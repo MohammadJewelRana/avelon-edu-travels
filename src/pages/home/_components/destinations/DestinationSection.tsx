@@ -17,7 +17,7 @@ const DestinationSection = () => {
     activeTab === "study" ? studyDestinations : travelDestinations;
 
   return (
-    <section className="relative overflow-hidden bg-[#f8f8f8] py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-[#f8f8f8] py-12 lg:py-16">
       {/* ================= Background ================= */}
 
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(220,38,38,0.12),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(234,179,8,0.14),transparent_35%)]" />
@@ -44,12 +44,12 @@ const DestinationSection = () => {
             Explore Destinations
           </span>
 
-          <h2 className="mt-6 text-4xl font-black leading-tight text-[#111111] lg:text-6xl">
-            Your Journey Starts
-            <span className="block bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500 bg-clip-text text-transparent">
-              With The Right Destination
-            </span>
-          </h2>
+<h2 className="mt-6 text-4xl font-black leading-tight text-[#111111] lg:text-6xl">
+  Explore Your
+  <span className="block bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500 bg-clip-text text-transparent">
+    Next Destination
+  </span>
+</h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
             Whether you're planning to study abroad or explore the world,
