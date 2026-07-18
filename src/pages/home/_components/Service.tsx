@@ -1,51 +1,73 @@
 import { motion } from "framer-motion";
-import {
+ 
+import ServiceCard from "./ServiceCard";
+
+ import {
   FaGraduationCap,
   FaPassport,
-  FaPlaneDeparture,
   FaGlobeAsia,
-  FaBriefcase,
+  FaNotesMedical,
+  FaHandshake,
+  FaUsers,
+  FaPlaneDeparture,
+  FaFileAlt,
   FaSuitcaseRolling,
 } from "react-icons/fa";
-
-import ServiceCard from "./ServiceCard";
 
 const services = [
   {
     icon: FaGraduationCap,
     title: "Study Abroad",
     description:
-      "Professional guidance for admissions, scholarships, and university applications worldwide.",
+      "Expert guidance for university admissions, scholarships, application preparation, and personalized support to help you achieve your international education goals.",
   },
   {
     icon: FaPassport,
     title: "Student Visa",
     description:
-      "Professional visa consultation with complete documentation support to maximize your approval chances.",
+      "Complete student visa assistance including document preparation, interview guidance, application review, and professional support for a smooth visa process.",
   },
   {
     icon: FaGlobeAsia,
     title: "Visit Visa",
     description:
-      "Fast and reliable visit visa processing for tourism, family visits, and business travel across multiple countries.",
+      "Reliable visit visa solutions for tourism, family visits, business trips, and short-term travel with accurate documentation and expert consultation.",
   },
   {
-    icon: FaBriefcase,
-    title: "Work Permit",
+    icon: FaNotesMedical,
+    title: "Medical Visa",
     description:
-      "Secure overseas employment opportunities with complete work permit and immigration assistance.",
+      "Comprehensive medical visa assistance with hospital coordination, appointment booking, document preparation, and travel support for overseas treatment.",
+  },
+  {
+    icon: FaHandshake,
+    title: "Business Visa",
+    description:
+      "Professional business visa services for meetings, conferences, trade visits, and corporate travel with complete documentation and application guidance.",
+  },
+  {
+    icon: FaUsers,
+    title: "Immigration Consultant",
+    description:
+      "Personalized immigration consultation for permanent residency, migration planning, eligibility assessment, and complete application assistance.",
   },
   {
     icon: FaPlaneDeparture,
     title: "Air Ticket",
     description:
-      "Book domestic and international flights at competitive prices with flexible travel options.",
+      "Affordable domestic and international flight booking with flexible travel options, competitive fares, and dedicated customer support for every journey.",
+  },
+  {
+    icon: FaFileAlt,
+    title: "Documentation Support",
+    description:
+      "Professional assistance with document verification, translation, notarization, application forms, and all required paperwork for your visa process.",
   },
   {
     icon: FaSuitcaseRolling,
     title: "Tour Packages",
     description:
-      "Explore carefully designed holiday packages with hotels, transport, sightseeing, and unforgettable experiences.",
+      "Discover customized holiday packages including flights, hotels, transportation, sightseeing, and memorable travel experiences at the best value.",
   },
 ];
 

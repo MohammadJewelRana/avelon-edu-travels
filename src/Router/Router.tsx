@@ -7,6 +7,8 @@ import Contact from "../pages/contact/Contact";
 
 import Management from "../pages/management/Management";
 import About from "../pages/about/About";
+import Tour from "../pages/tour/Tour";
+import MedicalVisa from "../pages/medical-visa/MedicalVisa";
 
 const Router = createBrowserRouter([
   {
@@ -29,8 +31,18 @@ const Router = createBrowserRouter([
       },
 
       {
-        path: "/management",
-        element: <Management />,
+        path: "/medical-visa",
+        element: <MedicalVisa />,
+      },
+
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+
+      {
+        path: "/Tour",
+        element: <Tour />,
       },
     ],
   },
