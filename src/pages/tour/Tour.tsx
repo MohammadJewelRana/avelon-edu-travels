@@ -3,7 +3,8 @@ import FeaturedPackages from "./FeaturedPackage/FeaturedPackages";
 
 const Tour=()=>{
     return(
-        <FeaturedPackages/>
+        // <FeaturedPackages/>
+        <p>Coming Soon</p>
 
     )
 }
