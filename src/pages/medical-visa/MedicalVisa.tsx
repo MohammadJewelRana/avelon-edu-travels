@@ -26,14 +26,15 @@ return (
  
 
       <main>
-        <MedicalVisaHero/>
+        <p>Coming soon</p>
+        {/* <MedicalVisaHero/>
         <TrustStats/>
         <MedicalVisaIntro />
         <MedicalVisaProcess />
         <MedicalVisaPackages />
         <MedicalVisaWhyUs />
   
-  <HomeContact/>
+  <HomeContact/> */}
  
       </main>
     </>

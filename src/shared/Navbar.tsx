@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: "Tour", path: "/tour" },
     { name: "Countries", path: "/countries" },
     { name: "Medical Visa", path: "/medical-visa" },
-    { name: "Countries", path: "/countries" },
+ 
     { name: "Contact", path: "/contact" },
   ];
 
