@@ -16,7 +16,7 @@ import {
 const HomeContact = () => {
   const [copiedText, setCopiedText] = useState("");
 
-  const copyToClipboard = async (text) => {
+  const copyToClipboard = async (text:any) => {
     try {
       await navigator.clipboard.writeText(text);
       setCopiedText(text);

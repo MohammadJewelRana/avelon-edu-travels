@@ -7,7 +7,11 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 
-const DestinationCard = ({ destination, type = "study" }) => {
+
+const DestinationCard = ({
+  destination,
+  type = "study",
+}:{destination:any,type:any}) => {
   return (
     <motion.div
       layout
@@ -72,7 +76,7 @@ const DestinationCard = ({ destination, type = "study" }) => {
 
         {/* Highlights */}
         <div className="mt-7 space-y-3">
-          {destination.highlights.map((item, index) => (
+          {destination.highlights.map((item:any, index:any) => (
             <div
               key={index}
               className="flex items-center gap-3"

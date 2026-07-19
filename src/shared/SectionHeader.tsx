@@ -1,11 +1,18 @@
 import { motion } from "framer-motion";
 
+type SectionHeaderProps = {
+  badge: string;
+  title: string;
+  description?: string;
+  center?: boolean;
+};
+
 const SectionHeader = ({
   badge,
   title,
   description,
   center = true,
-}) => {
+}: SectionHeaderProps) => {
   return (
     <div
       className={`mx-auto mb-12 max-w-3xl ${

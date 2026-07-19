@@ -4,8 +4,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../pages/home/Home";
 
 import Contact from "../pages/contact/Contact";
-
-import Management from "../pages/management/Management";
+ 
 import About from "../pages/about/About";
 import Tour from "../pages/tour/Tour";
 import MedicalVisa from "../pages/medical-visa/MedicalVisa";

@@ -16,7 +16,7 @@ const tabs = [
   },
 ];
 
-const DestinationTabs = ({ activeTab, setActiveTab }) => {
+const DestinationTabs = ({ activeTab, setActiveTab }:any) => {
   return (
     <div className="mb-14 flex justify-center">
       <div className="inline-flex flex-col gap-3 rounded-[32px] border border-gray-200 bg-white p-3 shadow-[0_20px_60px_rgba(17,17,17,.08)] md:flex-row">

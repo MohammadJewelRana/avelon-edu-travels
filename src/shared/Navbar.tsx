@@ -16,7 +16,7 @@ const Navbar = () => {
     { name: "Contact", path: "/contact" },
   ];
 
-  const linkClass = ({ isActive }) =>
+  const linkClass = ({ isActive }:any) =>
     `relative px-3 py-2 text-sm font-medium transition-all duration-300 ${
       isActive
         ? "text-yellow-400"

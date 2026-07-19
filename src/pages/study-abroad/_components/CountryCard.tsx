@@ -1,6 +1,6 @@
 import React from "react";
 
-const CountryCard = ({ name, code, whatsappNumber }) => {
+const CountryCard = ({ name, code, whatsappNumber }:any) => {
   const flagUrl = `https://flagcdn.com/w640/${code}.png`;
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
