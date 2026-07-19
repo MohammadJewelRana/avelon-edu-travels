@@ -7,9 +7,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
+    { name: "Study Abroad", path: "/study-abroad" },
     { name: "Tour", path: "/tour" },
-    { name: "Countries", path: "/countries" },
+    { name: "Business Visa", path: "/business-visa" },
     { name: "Medical Visa", path: "/medical-visa" },
  
     { name: "Contact", path: "/contact" },

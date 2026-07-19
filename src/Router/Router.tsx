@@ -9,6 +9,8 @@ import Management from "../pages/management/Management";
 import About from "../pages/about/About";
 import Tour from "../pages/tour/Tour";
 import MedicalVisa from "../pages/medical-visa/MedicalVisa";
+import BusinessVisa from "../pages/business-visa/BusinessVisa";
+import StudyAbroad from "../pages/study-abroad/StudyAbroad";
 
 const Router = createBrowserRouter([
   {
@@ -23,6 +25,16 @@ const Router = createBrowserRouter([
         path: "/about",
 
         element: <About />,
+      },
+      {
+        path: "/business-visa",
+
+        element: <BusinessVisa />,
+      },
+      {
+        path: "/study-abroad",
+
+        element: <StudyAbroad />,
       },
 
       {

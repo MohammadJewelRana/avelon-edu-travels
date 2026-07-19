@@ -1,12 +1,17 @@
-import FeaturedPackages from "./FeaturedPackage/FeaturedPackages";
+import CountryTourCards from "./FeaturedPackage/CountryTourCards";
+import FeaturedPackages from "./FeaturedPackage/CountryTourCards";
+import UpcomingPackages from "./FeaturedPackage/UpcomingPackages";
+import TourHero from "./TourHero";
 
-
-const Tour=()=>{
-    return(
-        // <FeaturedPackages/>
-        <p>Coming Soon</p>
-
-    )
-}
+const Tour = () => {
+  return (
+    <div>
+      <TourHero />
+      {/* <FeaturedPackages /> */}
+      <UpcomingPackages/>
+      <CountryTourCards/>
+    </div>
+  );
+};
 
 export default Tour;
