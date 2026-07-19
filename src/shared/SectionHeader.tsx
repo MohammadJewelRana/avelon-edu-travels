@@ -32,7 +32,7 @@ const SectionHeader = ({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
         transition={{ delay: 0.1, duration: 0.5 }}
-        className="text-3xl font-black uppercase tracking-[0.12em] text-gray-900 sm:text-4xl lg:text-5xl"
+        className="text-2xl font-black uppercase tracking-[0.12em] text-gray-900 md:text-3xl lg:text-4xl"
       >
         {title}
       </motion.h2>
