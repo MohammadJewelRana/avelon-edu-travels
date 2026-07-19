@@ -1,8 +1,7 @@
 // src/components/StudyAbroad/StudyAbroad.jsx
 import React from "react";
-import { countries } from "./_components/countries";
-import CountryCard from "./_components/CountryCard";
- 
+import CountryCard from "./CountryCard";
+import { countries } from "./countries";
 
 // Replace with your actual WhatsApp number (no "+" or spaces)
 const WHATSAPP_NUMBER = "8801XXXXXXXXX"; // e.g. 8801712345678

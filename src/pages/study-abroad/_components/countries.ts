@@ -1,0 +1,28 @@
+// src/components/StudyAbroad/countries.js
+
+export const countries = [
+  { name: "Australia", code: "au" },
+  { name: "United Kingdom", code: "gb" },
+  { name: "United States", code: "us" },
+  { name: "Canada", code: "ca" },
+  { name: "New Zealand", code: "nz" },
+  { name: "Germany", code: "de" },
+  { name: "France", code: "fr" },
+  { name: "Italy", code: "it" },
+  { name: "Spain", code: "es" },
+  { name: "Netherlands", code: "nl" },
+  { name: "Sweden", code: "se" },
+  { name: "Norway", code: "no" },
+  { name: "Denmark", code: "dk" },
+  { name: "Finland", code: "fi" },
+  { name: "Ireland", code: "ie" },
+  { name: "Switzerland", code: "ch" },
+  { name: "Japan", code: "jp" },
+  { name: "South Korea", code: "kr" },
+  { name: "Singapore", code: "sg" },
+  { name: "Malaysia", code: "my" },
+  { name: "China", code: "cn" },
+  { name: "UAE", code: "ae" },
+  { name: "Saudi Arabia", code: "sa" },
+  { name: "Qatar", code: "qa" },
+];

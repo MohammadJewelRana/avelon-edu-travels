@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
+import logo from "../assets/logo/avelon.jpg"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,14 +26,14 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link to="/" className="flex flex-col leading-none">
-          <span className="text-2xl font-black tracking-[0.18em] text-white">
-            AVELON
-          </span>
-          <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.35em] text-yellow-400">
-            Edu & Travel
-          </span>
-        </Link>
+ <Link to="/" className="flex flex-col leading-none  ">
+  <img
+    src={logo}
+    alt="Avelon Edu & Travel"
+    className="h-16 w-auto object-contain rounded-md"
+  />
+ 
+</Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
           {navLinks.map((item) => (
