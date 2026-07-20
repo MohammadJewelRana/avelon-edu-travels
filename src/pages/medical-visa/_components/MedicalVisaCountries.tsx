@@ -11,6 +11,7 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 import SectionHeader from "../../../shared/SectionHeader";
+import CTASection from "../../../shared/CTASection";
 
 const countries = [
   {
@@ -139,44 +140,14 @@ const MedicalVisaCountries = () => {
           })}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          className="mt-16 overflow-hidden rounded-[32px] bg-gradient-to-r from-slate-900 via-slate-800 to-black p-8 text-white shadow-[0_20px_60px_rgba(15,23,42,.18)] sm:p-10"
-        >
-          <div className="grid gap-6 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-yellow-300">
-                We also process more countries
-              </p>
-              <h3 className="mt-3 text-2xl font-black sm:text-4xl">
-                Need treatment in another country?
-              </h3>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">
-                If your preferred destination is not listed here, we can still
-                help you with medical visa support, hospital coordination, and
-                travel planning for other countries.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-4 lg:items-end">
-              <a
-                href="https://wa.me/8801XXXXXXXXX"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center gap-3 rounded-full bg-green-500 px-6 py-4 text-sm font-semibold text-white transition hover:bg-green-600"
-              >
-                <FaWhatsapp size={18} />
-                Contact on WhatsApp
-              </a>
-              <div className="text-sm text-slate-300">
-                Fast response • Country guidance • Treatment support
-              </div>
-            </div>
-          </div>
-        </motion.div>
+     <CTASection
+  badge="We Also Process More Countries"
+  title="Need Treatment in Another Country?"
+  description="If your preferred destination isn't listed, we can still assist with medical visa processing, hospital coordination, and complete travel planning for many other countries."
+  buttonText="Contact on WhatsApp"
+  buttonLink="https://wa.me/8801XXXXXXXXX"
+  footerText="Fast response • Country guidance • Treatment support"
+/>
       </div>
     </section>
   );

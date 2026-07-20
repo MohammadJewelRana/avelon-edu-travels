@@ -2,10 +2,7 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FaWhatsapp,
-  FaFileAlt,
-  FaUniversity,
-  FaPassport,
-  FaTag,
+ 
 } from "react-icons/fa";
 import SectionHeader from "../../../shared/SectionHeader";
 

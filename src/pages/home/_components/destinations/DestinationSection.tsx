@@ -8,6 +8,7 @@ import DestinationCard from "./DestinationCard";
 import studyDestinations from "./tourData";
 import travelDestinations from "./travelData";
 import SectionHeader from "../../../../shared/SectionHeader";
+import CTASection from "../../../../shared/CTASection";
 
  
 
@@ -74,39 +75,14 @@ const DestinationSection = () => {
         </AnimatePresence>
 
         {/* ================= Bottom CTA ================= */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="mt-20"
-        >
-          <div className="overflow-hidden rounded-[34px] border border-white/70 bg-white p-10 shadow-[0_20px_70px_rgba(17,17,17,.08)]">
-            <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
-              <div className="max-w-2xl">
-                <h3 className="text-3xl font-black text-[#111111] lg:text-4xl">
-                  Not Sure Which Destination Is Right For You?
-                </h3>
-
-                <p className="mt-4 text-lg leading-8 text-gray-600">
-                  Our experienced consultants will help you choose the best
-                  country, university, or travel package based on your goals,
-                  budget, and future plans.
-                </p>
-              </div>
-
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-red-600 via-red-500 to-yellow-500 px-8 py-5 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(220,38,38,.25)]"
-              >
-                Book Free Consultation
-
-                <FaArrowRight />
-              </Link>
-            </div>
-          </div>
-        </motion.div>
+<CTASection
+  badge="Free Expert Consultation"
+  title="Not Sure Which Destination Is Right for You?"
+  description="Our experienced consultants will help you choose the best country, university, or travel package based on your goals, budget, and future plans."
+  buttonText="Book Free Consultation"
+  buttonLink="https://wa.me/8801XXXXXXXXX?text=Hello!%20I%20would%20like%20a%20free%20consultation."
+  footerText="Personalized guidance • Trusted experts • No consultation fee"
+/>
       </div>
     </section>
   );

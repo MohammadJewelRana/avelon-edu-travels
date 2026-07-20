@@ -9,6 +9,7 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 import SectionHeader from "../../../shared/SectionHeader";
+import CTASection from "../../../shared/CTASection";
 
 const features = [
   {
@@ -124,42 +125,14 @@ const MedicalVisaWhyUs = () => {
           })}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          className="mt-16 rounded-[32px] bg-slate-900 px-8 py-8 text-white shadow-[0_20px_60px_rgba(15,23,42,.18)] sm:px-10"
-        >
-          <div className="grid gap-5 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-yellow-300">
-                Full medical travel support
-              </p>
-              <h3 className="mt-3 text-2xl font-black sm:text-4xl">
-                Ready to plan your treatment abroad?
-              </h3>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">
-                We support patients with medical visas, hospital coordination,
-                travel planning, and destination guidance for the right country.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-3 lg:items-end">
-              <a
-                href="https://wa.me/8801XXXXXXXXX"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-full bg-green-500 px-6 py-4 text-sm font-semibold text-white transition hover:bg-green-600"
-              >
-                Chat on WhatsApp
-              </a>
-              <p className="text-sm text-slate-300">
-                Fast response • Clear guidance • Trusted support
-              </p>
-            </div>
-          </div>
-        </motion.div>
+<CTASection
+  badge="Full Medical Travel Support"
+  title="Ready to Plan Your Treatment Abroad?"
+  description="We support patients with medical visas, hospital coordination, travel planning, and destination guidance for the right country."
+  buttonText="Chat on WhatsApp"
+  buttonLink="https://wa.me/8801XXXXXXXXX"
+  footerText="Fast response • Clear guidance • Trusted support"
+/>
       </div>
     </section>
   );
