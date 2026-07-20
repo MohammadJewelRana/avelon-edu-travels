@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaWhatsapp, FaCheckCircle, FaGlobeAsia } from "react-icons/fa";
 
-const WHATSAPP_NUMBER = "8801XXXXXXXXX";
+const WHATSAPP_NUMBER = "8801977005581";
 
 const OtherCountriesBanner = () => {
   return (

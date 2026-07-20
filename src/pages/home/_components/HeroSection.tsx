@@ -1,13 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import {
-  FaArrowRight,
-  FaPlay,
-  FaGraduationCap,
-  FaGlobeAmericas,
-  FaPassport,
-  FaPlaneDeparture,
-  FaCheckCircle,
-} from "react-icons/fa";
+import { FaPlay, FaPassport, FaPlaneDeparture } from "react-icons/fa";
+
+import heroImg from "../../../assets/hero/hero.avif";
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -21,7 +15,7 @@ const Hero = () => {
       {/* Background */}
       <motion.div style={{ y: backgroundY }} className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=2000&auto=format&fit=crop"
+          src={heroImg}
           alt="Study Abroad Travel"
           className="h-full w-full object-cover object-center"
         />
@@ -114,12 +108,17 @@ const Hero = () => {
             transition={{ delay: 0.45, duration: 0.6 }}
             className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <button className="group flex w-full sm:w-auto items-center justify-center gap-3 rounded-full border border-white/20 bg-white/8 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white backdrop-blur-md transition-all duration-250 hover:bg-white hover:text-slate-900">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-400 text-black">
+            <a
+              href="https://wa.me/8801977005581"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex w-full sm:w-auto items-center justify-center gap-3 rounded-full border border-white/20 bg-white/8 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-slate-900 sm:px-8 sm:py-4 sm:text-base"
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-400 text-black transition-transform duration-300 group-hover:scale-110">
                 <FaPlay size={12} />
               </span>
               Book Free Consultation
-            </button>
+            </a>
           </motion.div>
 
           {/* Stats */}

@@ -33,16 +33,22 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { Icon: FaFacebookF, href: "#", label: "Facebook" },
-    { Icon: FaInstagram, href: "#", label: "Instagram" },
-    { Icon: FaLinkedinIn, href: "#", label: "LinkedIn" },
-    { Icon: FaWhatsapp, href: "#", label: "WhatsApp" },
+    {
+      Icon: FaFacebookF,
+      href: "https://www.facebook.com/profile.php?id=61580335493258",
+      label: "Facebook",
+    },
+    // { Icon: FaInstagram, href: "#", label: "Instagram" },
+    // { Icon: FaLinkedinIn, href: "#", label: "LinkedIn" },
+    {
+      Icon: FaWhatsapp,
+      href: "https://wa.me/8801977005581",
+      label: "WhatsApp",
+    },
   ];
 
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-gradient-to-b from-zinc-950 via-black to-zinc-950 text-white">
- 
-
       {/* Ambient glows */}
       <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-red-600/15 blur-[120px]" />
       <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-yellow-400/10 blur-[120px]" />
@@ -111,18 +117,20 @@ const Footer = () => {
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-red-600/15 text-red-400">
                   <HiOutlineLocationMarker className="text-xl" />
                 </div>
-                <span className="pt-2 text-zinc-300">Dhaka, Bangladesh</span>
+                <span className="pt-2 text-zinc-300">
+                  Happy Rahman Plaza, Bangla motor, Dhaka, Bangladesh
+                </span>
               </div>
 
               {/* Phone */}
               <a
-                href="tel:+8801XXXXXXXXX"
+                href="tel:+8801977005581"
                 className="flex items-center gap-4 transition hover:text-yellow-400"
               >
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-red-600/15 text-red-400">
                   <HiOutlinePhone className="text-xl" />
                 </div>
-                <span className="text-zinc-300">+880 1XXXXXXXXX</span>
+                <span className="text-zinc-300">+880 1977005581</span>
               </a>
 
               {/* Email */}
@@ -133,7 +141,7 @@ const Footer = () => {
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-red-600/15 text-red-400">
                   <HiOutlineMail className="text-xl" />
                 </div>
-                <span className="text-zinc-300">info@avelon.com</span>
+                <span className="text-zinc-300">info@avelonbd.com</span>
               </a>
 
               {/* Social icons */}
@@ -143,6 +151,7 @@ const Footer = () => {
                     key={label}
                     href={href}
                     aria-label={label}
+                    target="_blank"
                     className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:border-yellow-400/50 hover:bg-yellow-400 hover:text-black"
                   >
                     <Icon />

@@ -130,7 +130,7 @@ const MedicalVisaWhyUs = () => {
   title="Ready to Plan Your Treatment Abroad?"
   description="We support patients with medical visas, hospital coordination, travel planning, and destination guidance for the right country."
   buttonText="Chat on WhatsApp"
-  buttonLink="https://wa.me/8801XXXXXXXXX"
+ 
   footerText="Fast response • Clear guidance • Trusted support"
 />
       </div>

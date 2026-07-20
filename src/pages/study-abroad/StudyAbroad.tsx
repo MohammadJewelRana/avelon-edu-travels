@@ -7,8 +7,7 @@ import StudyHero from "./_components/StudyHero";
 import OtherCountriesBanner from "./_components/OtherCountriesBanner";
 import SectionHeader from "../../shared/SectionHeader";
 
-// Replace with your actual WhatsApp number (no "+" or spaces)
-const WHATSAPP_NUMBER = "8801XXXXXXXXX"; // e.g. 8801712345678
+const WHATSAPP_NUMBER = "8801977005581";
 
 const StudyAbroad = () => {
   return (
@@ -17,13 +16,12 @@ const StudyAbroad = () => {
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         {/* Header */}
-        
-<SectionHeader
-  badge="Study Destination Guide"
-  title="Study Abroad"
-  description="Explore top study destinations around the world and start your journey with expert admission and visa guidance."
-/>
-  
+
+        <SectionHeader
+          badge="Study Destination Guide"
+          title="Study Abroad"
+          description="Explore top study destinations around the world and start your journey with expert admission and visa guidance."
+        />
 
         {/* Grid of country cards */}
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
@@ -37,18 +35,13 @@ const StudyAbroad = () => {
           ))}
         </div>
 
-
-
-
-
- 
         {/* Popular Subjects Section */}
         <div className="mt-16">
           <PopularSubjects />
         </div>
         <div className="mt-16">
-  <OtherCountriesBanner />
-</div>
+          <OtherCountriesBanner />
+        </div>
       </section>
     </div>
   );

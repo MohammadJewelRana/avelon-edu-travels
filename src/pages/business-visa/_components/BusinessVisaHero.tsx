@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const MedicalVisaHero = () => {
+const BusinessVisaHero = () => {
   return (
     <section className="relative flex min-h-[300px] lg:min-h-[350px] items-center overflow-hidden bg-black pt-24 pb-16 sm:min-h-[680px] sm:pt-28   lg:pb-20">
       <div
@@ -35,7 +35,7 @@ const MedicalVisaHero = () => {
           >
             <span className="h-2.5 w-2.5 rounded-full bg-red-500" />
             <span className="text-[16px] font-semibold uppercase tracking-[0.35em] text-yellow-300">
-              Medical Visa Service
+              Business Visa Service
             </span>
           </motion.div>
 
@@ -85,4 +85,4 @@ const MedicalVisaHero = () => {
   );
 };
 
-export default MedicalVisaHero;
+export default BusinessVisaHero;

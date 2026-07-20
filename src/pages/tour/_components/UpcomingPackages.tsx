@@ -47,11 +47,11 @@ const UpcomingPackages = () => {
   return (
     <section className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
-<SectionHeader
-  badge="Upcoming Packages"
-  title="Most Visited Travel Destinations"
-  description="Exciting travel packages are coming soon. Contact us today to receive the latest updates and pre-booking support."
-/>
+        <SectionHeader
+          badge="Upcoming Packages"
+          title="Most Visited Travel Destinations"
+          description="Exciting travel packages are coming soon. Contact us today to receive the latest updates and pre-booking support."
+        />
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {upcomingPackages.map((item, index) => (
