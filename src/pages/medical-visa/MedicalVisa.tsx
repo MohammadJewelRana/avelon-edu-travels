@@ -3,7 +3,7 @@ import MedicalVisaProcess from "./_components/MedicalProcess";
 import MedicalVisaCountries from "./_components/MedicalVisaCountries";
 import MedicalVisaHero from "./_components/MedicalVisaHero";
 
-import MedicalVisaPackages from "./_components/MedicalVisaPackages";
+
 
 import MedicalVisaWhyUs from "./_components/MedicalVisaWhyUs";
 import TrustStats from "./_components/TrustStats";

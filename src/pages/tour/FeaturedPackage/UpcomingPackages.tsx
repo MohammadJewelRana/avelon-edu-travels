@@ -1,6 +1,7 @@
 // UpcomingPackages.jsx
 import { motion } from "framer-motion";
 import { FaClock, FaWhatsapp } from "react-icons/fa";
+import SectionHeader from "../../../shared/SectionHeader";
 
 const upcomingPackages = [
   {
@@ -46,18 +47,11 @@ const UpcomingPackages = () => {
   return (
     <section className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-full bg-red-100 px-5 py-2 text-sm font-semibold uppercase tracking-[3px] text-red-600">
-            Upcoming Packages
-          </span>
-          <h2 className="mt-6 text-4xl font-black text-slate-900 sm:text-5xl">
-            Most Visited Travel Destinations
-          </h2>
-          <p className="mt-5 text-base leading-8 text-slate-600">
-            These popular destinations are coming soon. Contact us early to get
-            first updates and pre-booking support.
-          </p>
-        </div>
+<SectionHeader
+  badge="Upcoming Packages"
+  title="Most Visited Travel Destinations"
+  description="Exciting travel packages are coming soon. Contact us today to receive the latest updates and pre-booking support."
+/>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {upcomingPackages.map((item, index) => (

@@ -12,12 +12,7 @@ createRoot(document.getElementById("root")!).render(
     <div className="">
       <RouterProvider router={Router}></RouterProvider>
     </div>
-
-    {/* <AuthProvider>
-        <div className='max-w-6xl  mx-auto bg-black text-white'>
-          <RouterProvider router={Router}></RouterProvider>
-        </div>
-      </AuthProvider> */}
+ 
 
 
 

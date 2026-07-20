@@ -8,6 +8,8 @@ import {
   FaAward,
   FaCheckCircle,
 } from "react-icons/fa";
+import SectionHeader from "../../../shared/SectionHeader";
+import CTASection from "../../../shared/CTASection";
 
 const features = [
   {
@@ -67,26 +69,11 @@ const MedicalVisaWhyUs = () => {
       <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-yellow-100/40 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.55 }}
-          className="mx-auto max-w-3xl text-center"
-        >
-          <span className="inline-flex items-center gap-2 rounded-full border border-red-100 bg-white px-4 py-2 text-sm font-semibold uppercase tracking-[0.28em] text-red-600 shadow-sm">
-            Why Choose Us
-          </span>
-
-          <h2 className="mt-6 text-4xl font-black text-slate-900 md:text-5xl">
-            Your Health, Our Priority
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-600">
-            We are more than a visa agency. We help patients plan treatment
-            travel with care, speed, and complete support.
-          </p>
-        </motion.div>
+    <SectionHeader
+  badge="Why Choose Us"
+  title="Your Health, Our Priority"
+  description="We are more than a visa agency. We help patients plan their treatment journey with care, speed, and complete support."
+/>
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {features.map((feature, index) => {
@@ -138,42 +125,14 @@ const MedicalVisaWhyUs = () => {
           })}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          className="mt-16 rounded-[32px] bg-slate-900 px-8 py-8 text-white shadow-[0_20px_60px_rgba(15,23,42,.18)] sm:px-10"
-        >
-          <div className="grid gap-5 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-yellow-300">
-                Full medical travel support
-              </p>
-              <h3 className="mt-3 text-2xl font-black sm:text-4xl">
-                Ready to plan your treatment abroad?
-              </h3>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">
-                We support patients with medical visas, hospital coordination,
-                travel planning, and destination guidance for the right country.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-3 lg:items-end">
-              <a
-                href="https://wa.me/8801XXXXXXXXX"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-full bg-green-500 px-6 py-4 text-sm font-semibold text-white transition hover:bg-green-600"
-              >
-                Chat on WhatsApp
-              </a>
-              <p className="text-sm text-slate-300">
-                Fast response • Clear guidance • Trusted support
-              </p>
-            </div>
-          </div>
-        </motion.div>
+<CTASection
+  badge="Full Medical Travel Support"
+  title="Ready to Plan Your Treatment Abroad?"
+  description="We support patients with medical visas, hospital coordination, travel planning, and destination guidance for the right country."
+  buttonText="Chat on WhatsApp"
+  buttonLink="https://wa.me/8801XXXXXXXXX"
+  footerText="Fast response • Clear guidance • Trusted support"
+/>
       </div>
     </section>
   );

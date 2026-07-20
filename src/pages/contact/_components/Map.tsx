@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { FaLocationDot, FaArrowUpRightFromSquare } from "react-icons/fa6";
+import {   FaArrowUpRightFromSquare } from "react-icons/fa6";
+import SectionHeader from "../../../shared/SectionHeader";
 
 const Map = () => {
   return (
@@ -9,35 +10,11 @@ const Map = () => {
 
       <div className="relative customWidth px-4">
         {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="mx-auto mb-14 max-w-3xl text-center"
-        >
-          <span className="inline-flex items-center gap-2 rounded-full border border-red-200 bg-red-100 px-5 py-2 text-xs font-semibold uppercase tracking-[3px] text-red-600">
-            <FaLocationDot />
-            Find Our Office
-          </span>
-
-          <h2
-            className="mt-4 font-black leading-tight text-[#111111]"
-            style={{
-              fontSize: "clamp(2.3rem,5vw,2.5rem)",
-            }}
-          >
-            Visit Our
-            <span className="block bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500 bg-clip-text text-transparent">
-              Office Location
-            </span>
-          </h2>
-
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-            We'd love to meet you in person. Visit our office for expert
-            guidance on study abroad, visa services, and international travel.
-          </p>
-        </motion.div>
+  <SectionHeader
+  badge="Find Our Office"
+  title="Visit Our Office Location"
+  description="We'd love to meet you in person. Visit our office for expert guidance on study abroad, visa services, and international travel."
+/>
 
         {/* Map Card */}
         <motion.div

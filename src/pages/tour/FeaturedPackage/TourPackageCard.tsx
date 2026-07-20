@@ -21,7 +21,7 @@ const badgeColors = {
   New: "bg-slate-900 text-white",
 };
 
-const TourPackageCard = ({ tour }) => {
+const TourPackageCard = ({ tour }:any) => {
   return (
     <motion.div
       whileHover={{ y: -12 }}
@@ -38,7 +38,7 @@ const TourPackageCard = ({ tour }) => {
 
         <span
           className={`absolute left-5 top-5 rounded-full px-4 py-2 text-xs font-semibold ${
-            badgeColors[tour.badge]
+    badgeColors[tour.badge as keyof typeof badgeColors]
           }`}
         >
           {tour.badge}
@@ -94,7 +94,7 @@ const TourPackageCard = ({ tour }) => {
         </div>
 
         <div className="mt-6 flex flex-wrap gap-2">
-          {tour.highlights.slice(0, 3).map((item) => (
+       {tour.highlights.slice(0, 3).map((item: any) => (
             <span
               key={item}
               className="rounded-full bg-red-50 px-3 py-1 text-xs font-medium text-red-600"
