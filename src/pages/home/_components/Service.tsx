@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+ 
  
 import ServiceCard from "./ServiceCard";
 
@@ -13,6 +13,7 @@ import ServiceCard from "./ServiceCard";
   FaFileAlt,
   FaSuitcaseRolling,
 } from "react-icons/fa";
+import SectionHeader from "../../../shared/SectionHeader";
 
 const services = [
   {
@@ -81,55 +82,15 @@ const Services = () => {
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Heading */}
+ 
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="mx-auto mb-20 max-w-3xl text-center"
-        >
-          {/* Badge */}
-          <span className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-5 py-2 text-sm font-semibold uppercase tracking-[3px] text-red-600">
-            Our Services
-          </span>
 
-          {/* Heading */}
-          <h2 className="mt-6 text-4xl font-bold leading-tight text-[#111111] md:text-5xl lg:text-6xl">
-            Complete Education &
-            <span className="block text-red-600">Travel Solutions</span>
-          </h2>
+<SectionHeader
+  badge="Our Services"
+  title="Complete Education & Travel Solutions"
+  description="Expert guidance for study abroad, visas, work permits, flight bookings, and unforgettable travel experiences—all in one place."
+/>
 
-          {/* Divider */}
-          <div className="mx-auto mt-6 h-1 w-24 rounded-full bg-gradient-to-r from-red-600 via-yellow-400 to-red-600"></div>
-
-          {/* Description */}
-          <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-gray-600">
-            We provide end-to-end solutions for your international journey—from
-            <span className="font-semibold text-[#111111]">
-              {" "}
-              university admissions
-            </span>
-            ,
-            <span className="font-semibold text-[#111111]">
-              {" "}
-              student & visit visas
-            </span>
-            ,<span className="font-semibold text-[#111111]"> work permits</span>
-            ,
-            <span className="font-semibold text-[#111111]">
-              {" "}
-              air ticket booking
-            </span>
-            , to
-            <span className="font-semibold text-[#111111]">
-              {" "}
-              customized tour packages
-            </span>
-            . Your success and seamless travel experience are our top
-            priorities.
-          </p>
-        </motion.div>
         {/* Cards */}
 
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">

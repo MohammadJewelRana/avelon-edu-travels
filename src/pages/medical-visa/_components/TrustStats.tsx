@@ -6,6 +6,7 @@ import {
   FaGlobeAsia,
   FaCheckCircle,
 } from "react-icons/fa";
+import SectionHeader from "../../../shared/SectionHeader";
 
 const stats = [
   {
@@ -53,27 +54,12 @@ const TrustStats = () => {
 
       <div className="container relative mx-auto px-5">
         {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="mx-auto mb-14 max-w-3xl text-center"
-        >
-          <span className="inline-flex rounded-full bg-sky-100 px-4 py-1 text-sm font-semibold text-sky-700">
-            Why Patients Trust Avelon
-          </span>
-
-          <h2 className="mt-5 text-3xl font-bold text-slate-900 md:text-5xl">
-            Trusted Medical Visa Assistance
-          </h2>
-
-          <p className="mt-5 text-lg leading-8 text-slate-600">
-            We simplify the medical visa journey by connecting patients with
-            trusted hospitals, experienced doctors, and complete travel support.
-          </p>
-        </motion.div>
-
+       
+<SectionHeader
+  badge="Why Patients Trust Avelon"
+  title="Trusted Medical Visa Assistance"
+  description="We simplify the medical visa journey by connecting patients with trusted hospitals, experienced doctors, and complete travel support."
+/>
         {/* Cards */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((item, index) => {

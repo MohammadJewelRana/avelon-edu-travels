@@ -1,6 +1,7 @@
 // src/components/medical-visa/MedicalVisaProcess.jsx
 import { motion } from "framer-motion";
 import { FaClipboardCheck, FaFileMedical, FaPassport, FaPlane, FaHospitalAlt, FaCheckCircle } from "react-icons/fa";
+import SectionHeader from "../../../shared/SectionHeader";
 
 const processSteps = [
   {
@@ -52,22 +53,11 @@ const MedicalVisaProcess = () => {
     <section className="relative bg-white py-24">
       <div className="container mx-auto px-5">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mx-auto max-w-3xl text-center"
-        >
-          <span className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-4 py-2 text-sm font-semibold uppercase tracking-wider text-red-600">
-            How It Works
-          </span>
-          <h2 className="mt-6 text-4xl font-black text-gray-900 md:text-5xl">
-            Simple 6-Step Process
-          </h2>
-          <p className="mt-6 text-lg text-gray-600">
-            We've streamlined the medical visa process into 6 easy steps. Our team handles the complexities while you focus on your health.
-          </p>
-        </motion.div>
+     <SectionHeader
+  badge="How It Works"
+  title="Simple 6-Step Process"
+  description="We've streamlined the medical visa process into six simple steps, so you can focus on your health while we handle the rest."
+/>
 
         {/* Process Timeline */}
         <div className="mt-16 relative">

@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   const linkClass = ({ isActive }:any) =>
-    `relative px-3 py-2 text-lg font-medium transition-all duration-300 ${
+    `relative px-3 py-2 md:text-medium  lg:text-lg font-medium transition-all duration-300 ${
       isActive
         ? "text-yellow-400"
         : "text-white/80 hover:text-yellow-400"

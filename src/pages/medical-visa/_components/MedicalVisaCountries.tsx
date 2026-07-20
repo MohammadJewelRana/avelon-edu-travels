@@ -10,6 +10,7 @@ import {
   FaWhatsapp,
   FaCheckCircle,
 } from "react-icons/fa";
+import SectionHeader from "../../../shared/SectionHeader";
 
 const countries = [
   {
@@ -67,26 +68,12 @@ const MedicalVisaCountries = () => {
     <section className="bg-slate-50 py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-3xl text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.5 }}
-            className="mb-5 inline-flex items-center gap-2 rounded-full border border-red-100 bg-white px-4 py-2 shadow-sm"
-          >
-            <span className="h-2 w-2 rounded-full bg-red-500" />
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-red-600">
-              Medical Destination Guide
-            </span>
-          </motion.div>
-
-          <h2 className="text-3xl font-black text-slate-900 sm:text-5xl">
-            Choose the Right Country
-          </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
-            We help patients choose the best destination based on treatment type,
-            hospital quality, budget, and recovery needs.
-          </p>
+       <SectionHeader
+  badge="Medical Destination Guide"
+  title="Choose the Right Country for Your Treatment"
+  description="Explore leading medical destinations offering world-class healthcare, experienced specialists, and affordable treatment options."
+/>
+       
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">

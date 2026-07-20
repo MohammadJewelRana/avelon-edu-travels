@@ -7,6 +7,7 @@ import {
   FaPassport,
   FaTag,
 } from "react-icons/fa";
+import SectionHeader from "../../../shared/SectionHeader";
 
 const countryPackages = [
   {
@@ -303,15 +304,12 @@ const CountryTourCards = () => {
   return (
     <section className="bg-slate-50 py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-full bg-red-100 px-5 py-2 text-sm font-semibold uppercase tracking-[3px] text-red-600">
-            Country Tours
-          </span>
-          <h2 className="mt-6 text-4xl font-black text-slate-900 sm:text-5xl">
-            Explore 20 Popular Destinations
-          </h2>
-        </div>
-
+ 
+<SectionHeader
+  badge="Country Tours"
+  title="Explore Popular Destinations"
+  description="Discover breathtaking destinations with carefully planned tour packages, unforgettable experiences, and expert travel support."
+/>
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           <AnimatePresence mode="popLayout">
             {visiblePackages.map((item, index) => (

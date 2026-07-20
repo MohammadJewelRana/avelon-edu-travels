@@ -12,6 +12,7 @@ import {
   FaCopy,
   FaCheck,
 } from "react-icons/fa";
+import SectionHeader from "../../../shared/SectionHeader";
 
 const HomeContact = () => {
   const [copiedText, setCopiedText] = useState("");
@@ -36,34 +37,18 @@ const HomeContact = () => {
     <section className="relative overflow-hidden bg-[#f8f8f8] py-16 sm:py-20 lg:py-24">
       <div className="absolute inset-0 -z-0 bg-[radial-gradient(circle_at_top_left,rgba(220,38,38,0.12),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(17,17,17,0.08),transparent_35%)]" />
 
-      <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <SectionHeader
+  badge="Contact Us"
+  title="Let's Start Your Global Journey"
+  description="Reach out for study abroad, visa processing, travel packages, or any guidance you need."
+/>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="mx-auto mb-12 max-w-3xl text-center sm:mb-16"
-        >
-          <span className="inline-flex items-center rounded-full border border-red-200 bg-red-100 px-4 py-2 text-xs font-semibold uppercase tracking-[3px] text-red-600 sm:px-5 sm:text-sm">
-            Contact Us
-          </span>
-
-          <h2 className="mt-5 text-3xl font-bold leading-tight text-[#111111] sm:mt-6 sm:text-4xl lg:text-5xl">
-            Let's Start Your
-            <span className="block text-red-600">Global Journey</span>
-          </h2>
-
-          <p className="mt-4 text-base leading-7 text-gray-600 sm:mt-6 sm:text-lg sm:leading-8">
-            Reach out for study abroad, visa processing, travel packages, or any guidance you need.
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="relative overflow-hidden rounded-[28px] bg-white p-5 shadow-2xl sm:rounded-[35px] sm:p-8 lg:p-10"
+          className="relative overflow-hidden rounded-[28px] bg-white p-5 shadow-xl sm:rounded-[35px] sm:p-8 lg:p-10"
         >
           <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-red-600/10 blur-3xl sm:h-40 sm:w-40" />
 
@@ -179,6 +164,8 @@ const HomeContact = () => {
                 <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
               </a>
             </div>
+
+            
           </div>
         </motion.div>
       </div>

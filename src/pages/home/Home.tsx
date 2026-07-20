@@ -1,4 +1,4 @@
-import AboutTravel from "./_components/AboutTravels";
+ 
 import HomeContact from "./_components/Contact";
 import DestinationSection from "./_components/destinations/DestinationSection";
  

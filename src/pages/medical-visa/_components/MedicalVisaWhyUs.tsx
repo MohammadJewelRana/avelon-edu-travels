@@ -8,6 +8,7 @@ import {
   FaAward,
   FaCheckCircle,
 } from "react-icons/fa";
+import SectionHeader from "../../../shared/SectionHeader";
 
 const features = [
   {
@@ -67,26 +68,11 @@ const MedicalVisaWhyUs = () => {
       <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-yellow-100/40 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.55 }}
-          className="mx-auto max-w-3xl text-center"
-        >
-          <span className="inline-flex items-center gap-2 rounded-full border border-red-100 bg-white px-4 py-2 text-sm font-semibold uppercase tracking-[0.28em] text-red-600 shadow-sm">
-            Why Choose Us
-          </span>
-
-          <h2 className="mt-6 text-4xl font-black text-slate-900 md:text-5xl">
-            Your Health, Our Priority
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-600">
-            We are more than a visa agency. We help patients plan treatment
-            travel with care, speed, and complete support.
-          </p>
-        </motion.div>
+    <SectionHeader
+  badge="Why Choose Us"
+  title="Your Health, Our Priority"
+  description="We are more than a visa agency. We help patients plan their treatment journey with care, speed, and complete support."
+/>
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {features.map((feature, index) => {

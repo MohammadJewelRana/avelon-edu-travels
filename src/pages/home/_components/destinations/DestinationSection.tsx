@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaCompass } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 import DestinationTabs from "./DestinationTabs";
 import DestinationCard from "./DestinationCard";
 import studyDestinations from "./tourData";
 import travelDestinations from "./travelData";
+import SectionHeader from "../../../../shared/SectionHeader";
 
  
 
@@ -19,8 +20,7 @@ const DestinationSection = () => {
   return (
     <section className="relative overflow-hidden bg-[#f8f8f8] py-12 lg:py-16">
       {/* ================= Background ================= */}
-
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(220,38,38,0.12),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(234,179,8,0.14),transparent_35%)]" />
+ 
 
       <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-red-500/10 blur-[120px]" />
 
@@ -30,33 +30,12 @@ const DestinationSection = () => {
 
       <div className="relative customWidth px-4">
         {/* ================= Heading ================= */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="mx-auto mb-16 max-w-3xl text-center"
-        >
-          <span className="inline-flex items-center gap-2 rounded-full border border-red-200 bg-red-100 px-5 py-2 text-xs font-semibold uppercase tracking-[3px] text-red-600">
-            <FaCompass />
-
-            Explore Destinations
-          </span>
-
-<h2 className="mt-6 text-4xl font-black leading-tight text-[#111111] lg:text-6xl">
-  Explore Your
-  <span className="block bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500 bg-clip-text text-transparent">
-    Next Destination
-  </span>
-</h2>
-
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-            Whether you're planning to study abroad or explore the world,
-            Avelon helps you discover the perfect destination with complete
-            guidance and personalized support.
-          </p>
-        </motion.div>
+<SectionHeader
+  badge="Explore Destinations"
+  title="Explore Your Next Destination"
+  description="Whether you're planning to study abroad or explore the world, Avelon helps you discover the perfect destination with expert guidance and personalized support."
+/>
+ 
 
         {/* ================= Tabs ================= */}
 
