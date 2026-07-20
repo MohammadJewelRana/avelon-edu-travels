@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
+
 
 import DestinationTabs from "./DestinationTabs";
 import DestinationCard from "./DestinationCard";

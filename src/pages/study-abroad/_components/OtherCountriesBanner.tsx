@@ -10,7 +10,7 @@ const OtherCountriesBanner = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="relative overflow-hidden rounded-[32px] border border-red-100 bg-gradient-to-br from-white via-red-50/40 to-yellow-50/50 px-6 py-12 shadow-xl sm:px-10 lg:px-14"
+      className="relative overflow-hidden rounded-[32px]  bg-gradient-to-br from-white via-red-50/40 to-yellow-50/50 px-6 py-12  sm:px-10 lg:px-14"
     >
       {/* Decorative Glow */}
       <div className="absolute -left-16 -top-16 h-44 w-44 rounded-full bg-red-200/30 blur-3xl" />

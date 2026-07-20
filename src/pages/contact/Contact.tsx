@@ -4,14 +4,14 @@ import Map from "./_components/Map";
 
 
 import ContactHero from "./_components/ContactHero";
-import ContactInfoCards from "./_components/ContactInfoCard";
+ 
 import HomeContact from "../home/_components/Contact";
 
 const Contact = () => {
   return (
     <div className="relative">
  <ContactHero/>
- <ContactInfoCards/>
+ {/* <ContactInfoCards/> */}
 
 <HomeContact/>
       <Map />
