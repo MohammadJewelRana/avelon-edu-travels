@@ -18,7 +18,7 @@ import SectionHeader from "../../../shared/SectionHeader";
 const HomeContact = () => {
   const [copiedText, setCopiedText] = useState("");
 
-  const copyToClipboard = async (text:any) => {
+  const copyToClipboard = async (text: any) => {
     try {
       await navigator.clipboard.writeText(text);
       setCopiedText(text);
@@ -28,10 +28,10 @@ const HomeContact = () => {
     }
   };
 
-  const whatsappNumber = "8801983623034";
-  const contactEmail = "js.rana0326@gmail.com";
+  const whatsappNumber = "8801977005581";
+  const contactEmail = "info@avelonbd.com";
   const whatsappMessage = encodeURIComponent(
-    "Hello, I would like to get more information about your services."
+    "Hello, I would like to get more information about your services.",
   );
 
   return (
@@ -65,7 +65,8 @@ const HomeContact = () => {
                   Get in touch now
                 </h3>
                 <p className="mt-3 max-w-2xl text-sm leading-7 text-gray-600 sm:text-base">
-                  Choose the fastest way to reach us. Tap to call, email, or start a WhatsApp chat instantly.
+                  Choose the fastest way to reach us. Tap to call, email, or
+                  start a WhatsApp chat instantly.
                 </p>
               </div>
 
@@ -84,7 +85,7 @@ const HomeContact = () => {
             <div className="grid gap-4 sm:grid-cols-2">
               {/* Call Now */}
               <a
-                href="tel:+8801983623034"
+                href="tel:+8801977005581"
                 className="group flex flex-col items-center text-center rounded-3xl border border-gray-200 bg-gray-50 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:bg-white hover:shadow-lg sm:flex-row sm:text-left"
               >
                 <div className="mb-3 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-red-600 text-white shadow-lg shadow-red-600/20 sm:mb-0 sm:h-14 sm:w-14 ">
@@ -96,40 +97,44 @@ const HomeContact = () => {
                     Call Now
                   </p>
                   <h4 className="mt-1 text-sm font-semibold text-[#111111] sm:text-base">
-                    +880 1983623034
+                    +880 1977005581
                   </h4>
-                  <p className="mt-1 text-sm text-gray-600">Direct phone support</p>
+                  <p className="mt-1 text-sm text-gray-600">
+                    Direct phone support
+                  </p>
                 </div>
               </a>
 
               {/* Email */}
-      <div className="group flex flex-col items-center text-center rounded-3xl border border-gray-200 bg-gray-50 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:bg-white hover:shadow-lg md:flex-row md:text-left">
-  {/* Icon */}
-  <div className="mb-3 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-red-600 text-white shadow-lg shadow-red-600/20 md:mb-0 md:h-14 md:w-14">
-    <FaEnvelope className="text-base md:text-lg" />
-  </div>
+              <div className="group flex flex-col items-center text-center rounded-3xl border border-gray-200 bg-gray-50 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:bg-white hover:shadow-lg md:flex-row md:text-left">
+                {/* Icon */}
+                <div className="mb-3 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-red-600 text-white shadow-lg shadow-red-600/20 md:mb-0 md:h-14 md:w-14">
+                  <FaEnvelope className="text-base md:text-lg" />
+                </div>
 
-  {/* Text */}
-  <div className="min-w-0 md:px-4">
-    <p className="text-xs font-medium uppercase tracking-[2px] text-red-600 sm:text-sm">
-      Email Address
-    </p>
-    <h4 className="mt-1 truncate text-sm font-semibold text-[#111111] sm:text-base">
-      {contactEmail}
-    </h4>
-    <p className="mt-1 text-sm text-gray-600">Copy to clipboard</p>
-  </div>
+                {/* Text */}
+                <div className="min-w-0 md:px-4">
+                  <p className="text-xs font-medium uppercase tracking-[2px] text-red-600 sm:text-sm">
+                    Email Address
+                  </p>
+                  <h4 className="mt-1 truncate text-sm font-semibold text-[#111111] sm:text-base">
+                    {contactEmail}
+                  </h4>
+                  <p className="mt-1 text-sm text-gray-600">
+                    Copy to clipboard
+                  </p>
+                </div>
 
-  {/* Copy button: hidden on small, visible from md, aligned to right */}
-  <button
-    type="button"
-    onClick={() => copyToClipboard(contactEmail)}
-    className="mt-3 hidden h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-600 transition hover:border-red-300 hover:text-red-600 md:mt-0 md:ml-auto md:flex md:h-11 md:w-11"
-    aria-label="Copy email"
-  >
-    {copiedText === contactEmail ? <FaCheck /> : <FaCopy />}
-  </button>
-</div>
+                {/* Copy button: hidden on small, visible from md, aligned to right */}
+                <button
+                  type="button"
+                  onClick={() => copyToClipboard(contactEmail)}
+                  className="mt-3 hidden h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-600 transition hover:border-red-300 hover:text-red-600 md:mt-0 md:ml-auto md:flex md:h-11 md:w-11"
+                  aria-label="Copy email"
+                >
+                  {copiedText === contactEmail ? <FaCheck /> : <FaCopy />}
+                </button>
+              </div>
 
               {/* Office Address */}
               <div className="rounded-3xl border border-gray-200 bg-gray-50 p-5 sm:col-span-2">
@@ -138,7 +143,9 @@ const HomeContact = () => {
                     <FaMapMarkerAlt />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-[#111111]">Office Address</h4>
+                    <h4 className="font-semibold text-[#111111]">
+                      Office Address
+                    </h4>
                     <p className="mt-1 text-sm text-gray-600 sm:text-base">
                       Happy Rahman Plaza, Banglamotor, Dhaka
                     </p>
@@ -153,7 +160,9 @@ const HomeContact = () => {
                     <FaClock />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-[#111111]">Office Hours</h4>
+                    <h4 className="font-semibold text-[#111111]">
+                      Office Hours
+                    </h4>
                     <p className="mt-1 text-sm text-gray-600 sm:text-base">
                       Sat - Thu : 10 AM - 6 PM
                     </p>

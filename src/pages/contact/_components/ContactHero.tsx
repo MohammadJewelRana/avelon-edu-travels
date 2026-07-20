@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const ContactHero = () => {
   return (
-    <section className="relative flex max-h-[65vh] items-center overflow-hidden bg-black pt-28 pb-20">
+ <section className="relative flex min-h-[300px] lg:min-h-[350px] items-center overflow-hidden bg-black pt-24 pb-16 sm:min-h-[680px] sm:pt-28   lg:pb-20">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -26,7 +26,7 @@ const ContactHero = () => {
         className="absolute right-16 top-40 hidden h-44 w-44 rounded-full border border-white/10 bg-white/5 backdrop-blur-3xl lg:block"
       />
 
-      <div className="relative mx-auto flex w-full max-w-4xl items-center justify-center px-5 sm:px-6 lg:px-10">
+      <div className="relative mx-auto flex w-full max-w-5xl items-center justify-center px-5 sm:px-8 lg:px-10">
         <div className="mx-auto max-w-3xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -36,17 +36,15 @@ const ContactHero = () => {
           >
             <span className="h-2.5 w-2.5 rounded-full bg-red-500" />
             <span className="text-[16px] font-semibold uppercase tracking-[0.35em] text-yellow-300">
-              CONTACT AVELON
+              Contact Abroad
             </span>
           </motion.div>
-
-         
 
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.45 }}
-            className="mt-8 flex flex-wrap justify-center gap-3"
+            className="mt-7 flex flex-wrap justify-center gap-2 sm:gap-3"
           >
             {[
               "Study Abroad",

@@ -18,7 +18,12 @@ const countries = [
     country: "Thailand",
     flag: "🇹🇭",
     color: "from-red-500 to-orange-400",
-    treatments: ["Cosmetic Surgery", "Dental Care", "Fertility / IVF", "Wellness & Recovery"],
+    treatments: [
+      "Cosmetic Surgery",
+      "Dental Care",
+      "Fertility / IVF",
+      "Wellness & Recovery",
+    ],
     bestFor: "Affordable, high-quality elective treatments and recovery stays.",
     icon: FaSyringe,
   },
@@ -34,7 +39,12 @@ const countries = [
     country: "Singapore",
     flag: "🇸🇬",
     color: "from-yellow-500 to-amber-400",
-    treatments: ["Cancer Care", "Cardiovascular Care", "Complex Surgery", "Transplants"],
+    treatments: [
+      "Cancer Care",
+      "Cardiovascular Care",
+      "Complex Surgery",
+      "Transplants",
+    ],
     bestFor: "Premium destination for advanced and complex treatment.",
     icon: FaHospital,
   },
@@ -50,7 +60,12 @@ const countries = [
     country: "Turkey",
     flag: "🇹🇷",
     color: "from-pink-500 to-rose-400",
-    treatments: ["Hair Transplant", "Dental", "Eye Surgery", "Cosmetic Surgery"],
+    treatments: [
+      "Hair Transplant",
+      "Dental",
+      "Eye Surgery",
+      "Cosmetic Surgery",
+    ],
     bestFor: "Popular for aesthetic and specialty procedures.",
     icon: FaTooth,
   },
@@ -58,7 +73,12 @@ const countries = [
     country: "South Korea",
     flag: "🇰🇷",
     color: "from-violet-500 to-fuchsia-500",
-    treatments: ["Plastic Surgery", "Cancer Care", "Advanced Diagnostics", "Rehabilitation"],
+    treatments: [
+      "Plastic Surgery",
+      "Cancer Care",
+      "Advanced Diagnostics",
+      "Rehabilitation",
+    ],
     bestFor: "Known for modern technology and precision-based treatment.",
     icon: FaUserMd,
   },
@@ -69,12 +89,11 @@ const MedicalVisaCountries = () => {
     <section className="bg-slate-50 py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-3xl text-center">
-       <SectionHeader
-  badge="Medical Destination Guide"
-  title="Choose the Right Country for Your Treatment"
-  description="Explore leading medical destinations offering world-class healthcare, experienced specialists, and affordable treatment options."
-/>
-       
+          <SectionHeader
+            badge="Medical Destination Guide"
+            title="Choose the Right Country for Your Treatment"
+            description="Explore leading medical destinations offering world-class healthcare, experienced specialists, and affordable treatment options."
+          />
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -84,7 +103,7 @@ const MedicalVisaCountries = () => {
             return (
               <motion.a
                 key={item.country}
-                href="https://wa.me/8801XXXXXXXXX"
+                href="https://wa.me/8801977005581"
                 target="_blank"
                 rel="noreferrer"
                 initial={{ opacity: 0, y: 24 }}
@@ -140,14 +159,14 @@ const MedicalVisaCountries = () => {
           })}
         </div>
 
-     <CTASection
-  badge="We Also Process More Countries"
-  title="Need Treatment in Another Country?"
-  description="If your preferred destination isn't listed, we can still assist with medical visa processing, hospital coordination, and complete travel planning for many other countries."
-  buttonText="Contact on WhatsApp"
-  buttonLink="https://wa.me/8801XXXXXXXXX"
-  footerText="Fast response • Country guidance • Treatment support"
-/>
+        <CTASection
+          badge="We Also Process More Countries"
+          title="Need Treatment in Another Country?"
+          description="If your preferred destination isn't listed, we can still assist with medical visa processing, hospital coordination, and complete travel planning for many other countries."
+          buttonText="Contact on WhatsApp"
+         
+          footerText="Fast response • Country guidance • Treatment support"
+        />
       </div>
     </section>
   );

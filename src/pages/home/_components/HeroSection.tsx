@@ -114,12 +114,17 @@ const Hero = () => {
             transition={{ delay: 0.45, duration: 0.6 }}
             className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <button className="group flex w-full sm:w-auto items-center justify-center gap-3 rounded-full border border-white/20 bg-white/8 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white backdrop-blur-md transition-all duration-250 hover:bg-white hover:text-slate-900">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-400 text-black">
+            <a
+              href="https://wa.me/8801977005581"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex w-full sm:w-auto items-center justify-center gap-3 rounded-full border border-white/20 bg-white/8 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-slate-900 sm:px-8 sm:py-4 sm:text-base"
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-400 text-black transition-transform duration-300 group-hover:scale-110">
                 <FaPlay size={12} />
               </span>
               Book Free Consultation
-            </button>
+            </a>
           </motion.div>
 
           {/* Stats */}

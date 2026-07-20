@@ -1,10 +1,10 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
- 
+
 import SectionHeader from "../../../shared/SectionHeader";
 import TourCard from "./TourCard";
 
-  const countryPackages = [
+const countryPackages = [
   {
     id: 1,
     country: "Thailand",
@@ -149,40 +149,54 @@ import TourCard from "./TourCard";
     slug: "china-tour",
   },
 ];
-const visibleCount = 9;
 
-const CountryTourCards = () => {
+const PopularDestination = () => {
   const [showAll, setShowAll] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(9);
+
+  useEffect(() => {
+    const updateVisibleCount = () => {
+      if (window.innerWidth < 768) {
+        setVisibleCount(5); // Mobile
+      } else {
+        setVisibleCount(9); // Tablet & Desktop
+      }
+    };
+
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
+
   const visiblePackages = useMemo(
     () => (showAll ? countryPackages : countryPackages.slice(0, visibleCount)),
-    [showAll],
+    [showAll, visibleCount],
   );
-
   return (
-    <section className="bg-slate-50 py-24">
+    <section className="bg-slate-50 pt-24 ">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-10">
- 
-<SectionHeader
-  badge="Country Tours"
-  title="Explore Popular Destinations"
-  description="Discover breathtaking destinations with carefully planned tour packages, unforgettable experiences, and expert travel support."
-/>
-    <div className="mt-14 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-  <AnimatePresence mode="popLayout">
-{visiblePackages.map((item, index) => (
-  <motion.div
-    key={item.id}
-    layout
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: 30 }}
-    transition={{ duration: 0.45, delay: index * 0.05 }}
-  >
-    <TourCard item={item} />
-  </motion.div>
-))}
-  </AnimatePresence>
-</div>
+        <SectionHeader
+          badge="Country Tours"
+          title="Explore Popular Destinations"
+          description="Discover breathtaking destinations with carefully planned tour packages, unforgettable experiences, and expert travel support."
+        />
+        <div className="mt-14 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <AnimatePresence mode="popLayout">
+            {visiblePackages.map((item, index) => (
+              <motion.div
+                key={item.id}
+                layout
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 30 }}
+                transition={{ duration: 0.45, delay: index * 0.05 }}
+              >
+                <TourCard item={item} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
 
         {countryPackages.length > visibleCount && (
           <div className="mt-10 text-center">
@@ -199,4 +213,4 @@ const CountryTourCards = () => {
   );
 };
 
-export default CountryTourCards;
+export default PopularDestination;

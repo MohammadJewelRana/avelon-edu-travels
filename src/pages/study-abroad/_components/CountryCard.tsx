@@ -1,10 +1,10 @@
 import React from "react";
 
-const CountryCard = ({ name, code, whatsappNumber }:any) => {
+const CountryCard = ({ name, code, whatsappNumber }: any) => {
   const flagUrl = `https://flagcdn.com/w640/${code}.png`;
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    `Hi, I'm interested in studying in ${name}.`
+    `Hi, I'm interested in studying in ${name}.`,
   )}`;
 
   return (

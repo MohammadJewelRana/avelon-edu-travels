@@ -79,7 +79,7 @@ const DestinationSection = () => {
   title="Not Sure Which Destination Is Right for You?"
   description="Our experienced consultants will help you choose the best country, university, or travel package based on your goals, budget, and future plans."
   buttonText="Book Free Consultation"
-  buttonLink="https://wa.me/8801XXXXXXXXX?text=Hello!%20I%20would%20like%20a%20free%20consultation."
+ 
   footerText="Personalized guidance • Trusted experts • No consultation fee"
 />
       </div>
