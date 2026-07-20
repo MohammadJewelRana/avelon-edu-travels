@@ -1,13 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import {
-  FaArrowRight,
-  FaPlay,
-  FaGraduationCap,
-  FaGlobeAmericas,
-  FaPassport,
-  FaPlaneDeparture,
-  FaCheckCircle,
-} from "react-icons/fa";
+import { FaPlay, FaPassport, FaPlaneDeparture } from "react-icons/fa";
+
+import heroImg from "../../../assets/hero/hero.avif";
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -21,7 +15,7 @@ const Hero = () => {
       {/* Background */}
       <motion.div style={{ y: backgroundY }} className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=2000&auto=format&fit=crop"
+          src={heroImg}
           alt="Study Abroad Travel"
           className="h-full w-full object-cover object-center"
         />
