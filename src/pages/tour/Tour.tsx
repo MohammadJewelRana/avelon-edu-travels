@@ -8,7 +8,7 @@ const Tour = () => {
     <div>
       <TourHero />
       {/* <FeaturedPackages /> */}
-      <UpcomingPackages/>
+      {/* <UpcomingPackages/> */}
       <CountryTourCards/>
     </div>
   );

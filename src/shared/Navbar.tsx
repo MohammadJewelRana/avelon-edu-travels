@@ -10,7 +10,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Study Abroad", path: "/study-abroad" },
-    { name: "Tour", path: "/tour" },
+    { name: "Tours", path: "/tour" },
     { name: "Business Visa", path: "/business-visa" },
     { name: "Medical Visa", path: "/medical-visa" },
  
