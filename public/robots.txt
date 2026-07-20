@@ -1,0 +1,7 @@
+# robots.txt for Avelon Edu & Travels
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://avelonbd.com/sitemap.xml
