@@ -12,10 +12,5 @@ createRoot(document.getElementById("root")!).render(
     <div className="">
       <RouterProvider router={Router}></RouterProvider>
     </div>
- 
-
-
-
-
-  </StrictMode>
+  </StrictMode>,
 );

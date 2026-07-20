@@ -15,7 +15,7 @@ const MedicalVisa = () => {
         <TrustStats />
         <MedicalVisaCountries />
 
-        {/* <MedicalVisaProcess /> */}
+        <MedicalVisaProcess />
         {/* <MedicalVisaPackages /> */}
         <MedicalVisaWhyUs />
 

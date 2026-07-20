@@ -15,7 +15,7 @@ const stats = [
     value: 500,
     suffix: "+",
     label: "Patients Assisted",
-color: "from-red-600 to-red-500"
+    color: "from-red-600 to-red-500",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ color: "from-red-600 to-red-500"
     value: 30,
     suffix: "+",
     label: "Partner Hospitals",
-  color: "from-red-600 to-red-500"
+    color: "from-red-600 to-red-500",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ color: "from-red-600 to-red-500"
     value: 15,
     suffix: "+",
     label: "Countries Served",
-  color: "from-red-600 to-red-500"
+    color: "from-red-600 to-red-500",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ color: "from-red-600 to-red-500"
     value: 98,
     suffix: "%",
     label: "Visa Success Rate",
-   color: "from-red-600 to-red-500"
+    color: "from-red-600 to-red-500",
   },
 ];
 
@@ -54,14 +54,14 @@ const TrustStats = () => {
 
       <div className="container relative mx-auto px-5">
         {/* Heading */}
-       
-<SectionHeader
-  badge="Why Patients Trust Avelon"
-  title="Trusted Medical Visa Assistance"
-  description="We simplify the medical visa journey by connecting patients with trusted hospitals, experienced doctors, and complete travel support."
-/>
+
+        <SectionHeader
+          badge="Why Patients Trust Avelon"
+          title="Trusted Medical Visa Assistance"
+          description="We simplify the medical visa journey by connecting patients with trusted hospitals, experienced doctors, and complete travel support."
+        />
         {/* Cards */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 grid-cols-2 md:grid-cols-4">
           {stats.map((item, index) => {
             const Icon = item.icon;
 

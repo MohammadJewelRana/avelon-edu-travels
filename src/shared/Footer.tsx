@@ -33,7 +33,11 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { Icon: FaFacebookF, href: "#", label: "Facebook" },
+    {
+      Icon: FaFacebookF,
+      href: "https://www.facebook.com/profile.php?id=61580335493258",
+      label: "Facebook",
+    },
     // { Icon: FaInstagram, href: "#", label: "Instagram" },
     // { Icon: FaLinkedinIn, href: "#", label: "LinkedIn" },
     {
@@ -147,6 +151,7 @@ const Footer = () => {
                     key={label}
                     href={href}
                     aria-label={label}
+                    target="_blank"
                     className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:-translate-y-1 hover:border-yellow-400/50 hover:bg-yellow-400 hover:text-black"
                   >
                     <Icon />

@@ -121,9 +121,11 @@ const MedicalVisaProcess = () => {
                     whileHover={{ y: -8 }}
                     className="group rounded-3xl border border-gray-200 bg-white p-8 shadow-lg transition-all duration-300 hover:border-red-300 hover:shadow-2xl"
                   >
-                    <div className="flex items-start gap-6">
+                    <div className="flex flex-col items-center gap-6">
                       {/* Icon Box */}
-                      <div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-3xl text-white shadow-lg">
+                    
+                    
+                      <div className="flex h-12 w-12 md:h-20 md:w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-2xl text-white shadow-lg md:text-3xl">
                         <item.icon />
                       </div>
 
@@ -152,6 +154,9 @@ const MedicalVisaProcess = () => {
                           ))}
                         </ul>
                       </div>
+
+
+
                     </div>
                   </motion.div>
                 </div>

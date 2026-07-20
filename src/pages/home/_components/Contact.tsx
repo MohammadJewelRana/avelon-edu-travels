@@ -136,6 +136,51 @@ const HomeContact = () => {
                 </button>
               </div>
 
+              {/* Contact Numbers */}
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-5 sm:col-span-2">
+                <div className="mb-5">
+                  <h4 className="text-xl font-bold text-[#111111]">
+                    Contact Numbers
+                  </h4>
+                  <p className="mt-1 text-sm text-gray-600">
+                    Reach our travel consultants directly.
+                  </p>
+                </div>
+
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {[
+                    "+8801977005581",
+                    "+8801977005582",
+                    "+8801977005583",
+                    "+8801945440404",
+                  ].map((number) => (
+                    <a
+                      key={number}
+                      href={`tel:${number.replace(/\+/g, "")}`}
+                      className="group flex items-center gap-4 rounded-2xl border border-gray-200 bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-lg"
+                    >
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-600 text-white shadow-lg shadow-red-600/20">
+                        <FaPhoneAlt />
+                      </div>
+
+                      <div className="flex-1">
+                        <p className="text-xs font-semibold uppercase tracking-[2px] text-red-600">
+                          Hotline
+                        </p>
+
+                        <h5 className="mt-1 font-semibold text-[#111111]">
+                          {number}
+                        </h5>
+                      </div>
+
+                      <div className="rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-red-600 transition group-hover:bg-red-600 group-hover:text-white">
+                        Call
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+
               {/* Office Address */}
               <div className="rounded-3xl border border-gray-200 bg-gray-50 p-5 sm:col-span-2">
                 <div className="flex items-start gap-4">
