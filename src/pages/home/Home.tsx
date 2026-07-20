@@ -1,4 +1,6 @@
  
+ 
+ 
 import HomeContact from "./_components/Contact";
 import DestinationSection from "./_components/destinations/DestinationSection";
  
@@ -15,22 +17,17 @@ const Home = () => {
     <div className=" ">
 
 <Hero/>
-{/* <AboutTravel/> */}
+ 
 <Services/>
 <DestinationSection/>
 <HowWeWork/>
+{/* <AboutTravel/> */}
+ 
 <HomeContact />
 
  
 
-      {/* <Banner /> */}
-      {/* <Cautions/> */}
-{/* 
-      <Updates />
-      <Services />
-      <AboutRtemis />
-      <Concern />
-      <Feedback /> */}
+ 
     </div>
   );
 };

@@ -87,7 +87,7 @@ const processSteps = [
 
 const MedicalVisaProcess = () => {
   return (
-    <section className="relative bg-white py-24">
+    <section className="relative bg-white py-24 max-w-7xl mx-auto">
       <div className="container mx-auto px-5">
         {/* Section Header */}
         <SectionHeader
@@ -123,8 +123,7 @@ const MedicalVisaProcess = () => {
                   >
                     <div className="flex flex-col items-center gap-6">
                       {/* Icon Box */}
-                    
-                    
+
                       <div className="flex h-12 w-12 md:h-20 md:w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-2xl text-white shadow-lg md:text-3xl">
                         <item.icon />
                       </div>
@@ -154,9 +153,6 @@ const MedicalVisaProcess = () => {
                           ))}
                         </ul>
                       </div>
-
-
-
                     </div>
                   </motion.div>
                 </div>

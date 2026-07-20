@@ -45,7 +45,7 @@ const stats = [
 
 const TrustStats = () => {
   return (
-    <section className="relative bg-white py-20">
+    <section className="relative bg-white py-20 max-w-7xl mx-auto">
       {/* Background Blur */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -left-24 top-10 h-64 w-64 rounded-full bg-sky-100 blur-3xl opacity-60" />
