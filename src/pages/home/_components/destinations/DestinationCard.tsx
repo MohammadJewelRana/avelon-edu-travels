@@ -16,6 +16,7 @@ const DestinationCard = ({
   type: any;
 }) => {
   const explorePath = type === "study" ? "/study-abroad" : "/tour";
+  console.log('')
 
   return (
     <motion.div
