@@ -10,6 +10,7 @@ import Tour from "../pages/tour/Tour";
 import MedicalVisa from "../pages/medical-visa/MedicalVisa";
 import BusinessVisa from "../pages/business-visa/BusinessVisa";
 import StudyAbroad from "../pages/study-abroad/StudyAbroad";
+import QrGenerator from "../shared/QrGenerator";
 
 const Router = createBrowserRouter([
   {
@@ -55,6 +56,11 @@ const Router = createBrowserRouter([
         path: "/Tour",
         element: <Tour />,
       },
+      {
+        path: "/qr",
+        element: <QrGenerator />,
+      },
+      
     ],
   },
 ]);
