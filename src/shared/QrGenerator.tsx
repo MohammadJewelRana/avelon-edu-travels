@@ -11,7 +11,7 @@ import {
 
 export default function QrGenerator() {
   // const url = "http://localhost:3001/files/cv.pdf";
-  const url = "https://avelon-edu.vercel.app/files/cv.pdf";
+  const url = "https://avelon-edu-travels.vercel.app/files/cv.pdf";
 
   const [loading, setLoading] = useState(true);
   const [fileExists, setFileExists] = useState(false);
