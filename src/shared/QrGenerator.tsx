@@ -22,6 +22,7 @@ export default function QrGenerator() {
       try {
         const res = await fetch(url, { method: "HEAD" });
         setFileExists(res.ok);
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (error) {
         setFileExists(false);
       } finally {
@@ -40,6 +41,7 @@ export default function QrGenerator() {
       setTimeout(() => {
         setCopied(false);
       }, 2000);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       alert("Failed to copy link");
     }
