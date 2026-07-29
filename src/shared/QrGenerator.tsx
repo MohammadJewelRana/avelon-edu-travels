@@ -10,12 +10,17 @@ import {
 } from "react-icons/fa";
 
 export default function QrGenerator() {
-  // const url = "http://localhost:3001/TradeLicense/rpt_TradeLicense_print_ver2.aspx/id=9220d917-d489-4de7-a1e1-/2c2fca603ca9&printtype=NEW&transactionno=/410094637.pdf";
+  const urlLocal = "http://localhost:3001/TradeLicense/rpt_TradeLicense_print_ver2.aspx/id=9220d917-d489-4de7-a1e1-/2c2fca603ca9&printtype=NEW&transactionno=/410094637.pdf";
+  console.log(urlLocal);
+  
   
   // const url = "http://localhost:3001/files/cv.pdf";
-  const url = "https://avelon-edu-travels.vercel.app/TradeLicense/rpt_TradeLicense_print_ver2.aspx/id=9220d917-d489-4de7-a1e1-/2c2fca603ca9&printtype=NEW&transactionno=/410094637.pdf";
+  // const url = "https://avelon-edu-travels.vercel.app/TradeLicense/rpt_TradeLicense_print_ver2.aspx/id=9220d917-d489-4de7-a1e1-/2c2fca603ca9&printtype=NEW&transactionno=/410094637.pdf";
 
   // const url = "https://avelon-edu-travels.vercel.app/files/cv.pdf";
+
+
+  const url = "https://avelon-edu-travels.vercel.app/TradeLicense/rpt_TradeLicense_print_ver2.aspx/id=9220d917-d489-4de7-a1e1-/2c2fca603ca9&printtype=NEW&transactionno=/410094637.pdf";
 
  
 
