@@ -20,9 +20,8 @@ export const countries = [
   { name: "Japan", code: "jp" },
   { name: "South Korea", code: "kr" },
   { name: "Singapore", code: "sg" },
-  { name: "Malaysia", code: "my" },
+  // { name: "Malaysia", code: "my" },
   { name: "China", code: "cn" },
-  { name: "UAE", code: "ae" },
-  { name: "Saudi Arabia", code: "sa" },
-  { name: "Qatar", code: "qa" },
+
+
 ];

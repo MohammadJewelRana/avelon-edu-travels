@@ -15,7 +15,7 @@ const Navbar = () => {
     { name: "Medical Visa", path: "/medical-visa" },
 
     { name: "Contact", path: "/contact" },
-    { name: "QR", path: "/qr" },
+    // { name: "QR", path: "/qr" },
   ];
 
   const linkClass = ({ isActive }: any) =>
