@@ -66,7 +66,7 @@ const TourCard = ({ item }: TourPackageCardProps) => {
 
           {/* WhatsApp Button */}
           <a
-            href={`https://wa.me/8801977005581?text=Hello, I want information about ${encodeURIComponent(
+            href={`https://wa.me/8801977005582?text=Hello, I want information about ${encodeURIComponent(
               item.title,
             )}`}
             target="_blank"

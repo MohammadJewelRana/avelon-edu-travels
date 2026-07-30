@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  FaRegClock,
+  
   FaMoneyBillWave,
   FaUniversity,
   FaFileAlt,
   FaPlaneDeparture,
   FaHotel,
-  FaHeadset,
-  FaPassport,
+  
+ 
   FaCheckCircle,
 } from "react-icons/fa";
 import BusinessVisaHero from "./_components/BusinessVisaHero";
